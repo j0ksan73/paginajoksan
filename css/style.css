@@ -1,0 +1,145 @@
+:root{
+    --color-fondo: 	#b9b9f5;
+    --color-info:  #7f8ead;
+    --color-primario: #d2d4dc;  
+    --color-secundario: #adb0d5; 
+    --color-fuentes: #000;
+    --color-borde: #9b9dbb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-fondo);
+    color: var(--color-fuentes);
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+.contenedor {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span {
+    color: var(--color-secundario);
+}
+
+.contenedor-contacto {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contenedor-contacto > * {
+    padding: 1em;
+}
+
+.formulario-contacto{
+    background: var(--color-primario);
+}
+
+.formulario-contacto form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario-contacto form label {
+    display: block;
+}
+
+.formulario-contacto form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario-contacto form .bloque {
+    grid-column: 1 / 3;
+}
+
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: var(--color-fuentes);
+    border-bottom: 1px solid ;
+}
+
+.formulario-contacto form button {
+    background: var(--color-secundario);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.formulario-contacto form button:hover,
+.formulario-contacto form button:focus {
+    background: var(--color-borde);
+    color: var(--color-fuentes);
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.informacion-contacto {
+    background: var(--color-info);
+}
+
+.informacion-contacto h4, .informacion-contacto ul, .informacion-contacto p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contenedor-contacto {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contenedor-contacto > * {
+        padding: 2em;
+    }
+    .informacion-contacto h4,
+    .informacion-contacto ul,
+    .informacion-contacto p {
+        text-align: left;
+    }
+}
+
+#banner {
+    display: none;
+  }
+  
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    #banner {
+      display: block;
+      background-image: url('/img/edificio.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      height:200px;
+    }
+  }
