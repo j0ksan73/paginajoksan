@@ -136,7 +136,7 @@ ul {
   @media (min-width: 481px) and (max-width: 1024px) {
     #banner {
       display: block;
-      background-image: url('/img/edificio.jpg');
+      background-image: url('img/edificio.jpg');
       background-size: cover;
       background-position: center;
       border-radius: 15px;
